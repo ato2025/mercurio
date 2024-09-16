@@ -1,0 +1,27 @@
+.productCart{
+ animation:productCart 2s ;
+}
+
+.productCart:hover > .productCart-img-container{
+   height: 70% !important;
+   width: 100%;
+   }
+   .productCart:hover > .productCart-title{
+      height: 30% !important;
+      width: 100%;
+   }
+   .productCart:hover  .productCart-btnContainer{
+   bottom: 0 !important;
+   }
+   .productCart:hover  .productCart-img{
+      transform: scale(1.1);
+   }
+
+   @keyframes productCart{
+      0%{
+         transform: translateY(-50vh);
+      }
+      100%{
+         transform: translateY(0vh);
+      }
+   }

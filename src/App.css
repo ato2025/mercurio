@@ -1,0 +1,189 @@
+@font-face {
+  font-family: roboto;
+  src: url(./../public/font/RobotoRegular.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: roboto;
+}
+body {
+  overflow-x: hidden;
+}
+.cp {
+  cursor: pointer;
+}
+.t07 {
+  transition: all 0.7s;
+}
+
+.navbar-menu {
+  animation: navbar 1s;
+}
+.HomeServicesContainer {
+  background: url(./../public/banner6.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.servicesItemsContainer {
+  background-color: #33333392;
+}
+.homeCategrieBoxTextsContainer {
+  background-color: #222222a4;
+}
+.homeCategrieBox:hover > .homeCategrieBoxTextsContainer {
+  top: 0 !important;
+  align-items: center;
+}
+
+.productBoxText {
+  background-color: #414041c2;
+}
+
+.homeCategories {
+  /* background-image: linear-gradient(to bottom , rgb(30, 41, 59)50%,white ); */
+  /* background-image: linear-gradient(to bottom , rgb(15,23,42)50%,rgb(163, 161, 161) ); */
+}
+
+.newsBox {
+  background-color: #dedddd28;
+}
+.pageBgLayout {
+  background-color: #08012358;
+}
+
+.abotUsProps {
+  background: url(./../public/aboutus/prop.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.loader {
+  animation: loader 3s infinite;
+}
+
+@keyframes loader {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: translateY(1);
+  }
+}
+
+@keyframes navbar {
+  0% {
+    transform: translateY(-50vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #615f5f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #023555da;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1b62b8;
+}
+
+.directUpIcon {
+  animation: directUpIcon 1s infinite;
+}
+
+@keyframes directUpIcon {
+  0% {
+    transform: translateY(40%);
+  }
+  100% {
+    transform: translateY(-40%);
+  }
+}
+
+.mobileNavItem:nth-child(1) {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.mobileNavItem:nth-child(5) {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.eyeIcon {
+  animation: eyeIcon 3s infinite;
+}
+
+@keyframes eyeIcon {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+    color: red;
+  }
+}
+
+.chevRight {
+  animation: chevRight 1s infinite;
+}
+@keyframes chevRight {
+  0% {
+    transform: translateX(vw);
+  }
+  100% {
+    transform: translateX(2vw);
+  }
+}
+
+.chevLeft {
+  animation: chevLeft 1s infinite;
+}
+@keyframes chevLeft {
+  0% {
+    transform: translateX(2vw);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+}
+.adminHeader {
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0.106) 20%,
+    #80808000
+  );
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(16.8px);
+}
+.landingAdminBoxes{
+  background: rgba(255, 255, 255, 0.19);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(16.8px);
+-webkit-backdrop-filter: blur(16.8px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.sweetConfirmBtn {
+  background-color: #1b62b8 !important;
+}
+.categorySwiperSlide{
+  width: 20rem !important;
+  height: 12rem !important;
+  
+}
